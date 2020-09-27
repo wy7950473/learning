@@ -1,0 +1,1350 @@
+{\rtf1\ansi\ansicpg936\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fnil\fcharset134 PingFangSC-Regular;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fswiss\fcharset0 Helvetica-Oblique;\f4\fnil\fcharset0 Menlo-Italic;}
+{\colortbl;\red255\green255\blue255;\red109\green109\blue109;\red32\green32\blue32;\red225\green179\blue88;
+\red153\green168\blue186;\red191\green100\blue38;\red100\green136\blue148;\red86\green132\blue173;\red254\green187\blue91;
+\red88\green118\blue71;\red173\green169\blue32;\red133\green96\blue154;\red81\green136\blue67;\red197\green195\blue255;
+\red251\green2\blue255;\red251\green2\blue7;\red0\green0\blue0;\red172\green172\blue172;}
+{\*\expandedcolortbl;;\csgenericrgb\c42745\c42745\c42745;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c88235\c70196\c34510;
+\csgenericrgb\c60000\c65882\c72941;\csgenericrgb\c74902\c39216\c14902;\csgenericrgb\c39216\c53333\c58039;\csgenericrgb\c33725\c51765\c67843;\csgenericrgb\c99608\c73333\c35686;
+\csgenericrgb\c34510\c46275\c27843;\csgenericrgb\c67843\c66275\c12549;\csgenericrgb\c52157\c37647\c60392;\csgenericrgb\c31765\c53333\c26275;\csgenericrgb\c77255\c76471\c100000;
+\cssrgb\c100000\c25279\c100000;\cssrgb\c100000\c14913\c0;\cssrgb\c0\c0\c0;\csgenericrgb\c67451\c67451\c67451;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17460\viewh11240\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 \'d2\'bb
+\f1 .MyBatis
+\f0 \'d3\'eb
+\f1 JPA
+\f0 \'b1\'c8\'bd\'cf
+\f1 \
+
+\fs36 1.MyBatis
+\f0 \'d3\'c5\'ca\'c6
+\f1 \
+      1.1 SQL
+\f0 \'d3\'ef\'be\'e4\'bf\'c9\'d2\'d4\'d7\'d4\'d3\'c9\'bf\'d8\'d6\'c6\'a3\'ac\'b8\'fc\'c1\'e9\'bb\'ee\'a3\'ac\'d0\'d4\'c4\'dc\'bd\'cf\'b8\'df\
+     1.2 SQL\'d3\'eb\'b4\'fa\'c2\'eb\'b7\'d6\'c0\'eb\'a3\'ac\'d2\'d7\'d3\'da\'d4\'c4\'b6\'c1\'ba\'cd\'ce\'ac\'bb\'a4\
+     1.3 \'cc\'e1\'b9\'a9XML\'b1\'ea\'c7\'a9\'a3\'ac\'d6\'a7\'b3\'d6\'b1\'e0\'d0\'b4\'b6\'af\'cc\'acSQL\'d3\'ef\'be\'e4\
+
+\f1 2.MyBatis
+\f0 \'c1\'d3\'ca\'c6\
+     2.1 \'bc\'f2\'b5\'a5CRUD\'b2\'d9\'d7\'f7\'bb\'b9\'b5\'c3\'d0\'b4SQL\'d3\'ef\'be\'e4\
+     2.2 XML\'d6\'d0\'d3\'d0\'b4\'f3\'c1\'bf\'b5\'c4SQL\'d2\'aa\'ce\'ac\'bb\'a4\
+     2.3 MyBatis\'d7\'d4\'c9\'ed\'b9\'a6\'c4\'dc\'ba\'dc\'d3\'d0\'cf\'de\'a3\'ac\'b5\'ab\'d6\'a7\'b3\'d6Plugin\
+3.JPA\'d3\'c5\'ca\'c6\
+     3.1 JPA\'d2\'c6\'d6\'b2\'d0\'d4\'b1\'c8\'bd\'cf\'ba\'c3(JPQL)\
+     3.2 \'cc\'e1\'b9\'a9\'c1\'cb\'ba\'dc\'b6\'e0CRUD\'b7\'bd\'b7\'a8\'a1\'a2\'bf\'aa\'b7\'a2\'d0\'a7\'c2\'ca\'b8\'df\
+     3.3 \'b6\'d4\'cf\'f3\'bb\'af\'b3\'cc\'b6\'c8\'b8\'fc\'b8\'df\
+\
+
+\fs48 \'b6\'fe.MyBatis-Plus\'bc\'f2\'bd\'e9
+\fs36 \
+1.MP\'ca\'c7\'d2\'bb\'b8\'f6MyBatis\'b5\'c4\'d4\'f6\'c7\'bf\'b9\'a4\'be\'df\'a3\'ac\'d6\'bb\'d7\'f6\'d4\'f6\'c7\'bf\'b2\'bb\'d7\'f6\'b8\'c4\'b1\'e4\'a1\'a3\
+2.\'b9\'d9\'b7\'bd\'b5\'d8\'d6\'b7\'a3\'bahttps://mybatis.plus\
+3.\'cc\'d8\'d0\'d4\'a3\'ba\
+    3.1 \'ce\'de\'c7\'d6\'c8\'eb\'a1\'a2\'cb\'f0\'ba\'c4\'d0\'a1\'a1\'a2\'c7\'bf\'b4\'f3\'b5\'c4CRUD\'b2\'d9\'d7\'f7\
+    3.2 \'d6\'a7\'b3\'d6Lambda\'d0\'ce\'ca\'bd\'b5\'f7\'d3\'c3\'a3\'ac\'d6\'a7\'b3\'d6\'b6\'e0\'d6\'d6\'ca\'fd\'be\'dd\'bf\'e2\
+    3.3 \'d6\'a7\'b3\'d6\'d6\'f7\'bc\'fc\'d7\'d4\'b6\'af\'c9\'fa\'b3\'c9\'a1\'a2\'d6\'a7\'b3\'d6ActiveRecord\'c4\'a3\'ca\'bd\
+    3.4 \'d6\'a7\'b3\'d6\'d7\'d4\'b6\'a8\'d2\'e5\'c8\'ab\'be\'d6\'cd\'a8\'d3\'c3\'b2\'d9\'d7\'f7\'a1\'a2\'d6\'a7\'b3\'d6\'b9\'d8\'bc\'fc\'b4\'ca\'d7\'d4\'b6\'af\'d7\'aa\'d2\'e5\
+    3.5 \'c4\'da\'d6\'c3\'b4\'fa\'c2\'eb\'c9\'fa\'b3\'c9\'c6\'f7\'a1\'a2\'c4\'da\'d6\'c3\'b7\'d6\'d2\'b3\'b2\'e5\'bc\'fe\'a1\'a2\'c4\'da\'d6\'c3\'d0\'d4\'c4\'dc\'b7\'d6\'ce\'f6\'b2\'e5\'bc\'fe\
+    3.6 \'c4\'da\'d6\'c3\'c8\'ab\'be\'d6\'c0\'b9\'bd\'d8\'b2\'e5\'bc\'fe\'a1\'a2\'c4\'da\'d6\'c3Sql\'d7\'a2\'c8\'eb\'b0\'fe\'c0\'eb\'c6\'f7\
+\
+
+\fs48 \'c8\'fd.\'ca\'b9\'d3\'c3\
+
+\fs36 1.\'b4\'b4\'bd\'a8\'cf\'ee\'c4\'bf\
+2.\'d0\'de\'b8\'c4pom\'ce\'c4\'bc\'fe\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \cb3 <!--lombok
+\f0 \'bc\'f2\'bb\'af
+\f1 java
+\f0 \'b4\'fa\'c2\'eb
+\f1 -->\
+\cf4 <dependency>\
+    <groupId>\cf5 org.projectlombok\cf4 </groupId>\
+    <artifactId>\cf5 lombok\cf4 </artifactId>\
+    <optional>\cf5 true\cf4 </optional>\
+</dependency>\
+\
+\cf2 <!--MyBatis-Plus
+\f0 \'c6\'f4\'b6\'af\'c6\'f7
+\f1 -->\
+\cf4 <dependency>\
+    <groupId>\cf5 com.baomidou\cf4 </groupId>\
+    <artifactId>\cf5 mybatis-plus-boot-starter\cf4 </artifactId>\
+    <version>\cf5 3.1.0\cf4 </version>\
+</dependency>\
+\
+<dependency>\
+    <groupId>\cf5 mysql\cf4 </groupId>\
+    <artifactId>\cf5 mysql-connector-java\cf4 </artifactId>\
+</dependency>\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 3.\'d0\'de\'b8\'c4properties.yml\'c5\'e4\'d6\'c3\'ce\'c4\'bc\'fe\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf6 \cb3 spring\cf5 :\
+  \cf6 datasource\cf5 :\
+    \cf6 driver-class-name\cf5 : \cf7 com\cf5 .\cf7 mysql\cf5 .\cf7 cj\cf5 .\cf7 jdbc\cf5 .\cf7 Driver\
+    \cf6 url\cf5 : jdbc:mysql://localhost:3306/mp?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC\
+    \cf6 username\cf5 : root\
+    \cf6 password\cf5 : Wy7950473\
+\cf6 server\cf5 :\
+  \cf6 port\cf5 : \cf8 80\
+\
+\cf6 logging\cf5 :\
+  \cf6 level\cf5 :\
+    \cf6 root\cf5 : \cf9 warn\
+    \cf6 com.example.dao\cf5 : \cf9 trace\
+  \cf6 pattern\cf5 :\
+    \cf6 console\cf5 : \cf10 '%p%m%n'
+\f0 \cf0 \cb1 \
+4.\'b4\'b4\'bd\'a8\'ca\'b5\'cc\'e5\'c0\'e0\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Data  \cf2 //
+\f0 \'c9\'fa\'b3\'c9\'b3\'a3\'d3\'c3\'b5\'c4\'b7\'bd\'b7\'a8\'c8\'e7
+\f1 get/set/toString
+\f0 \'b5\'c8\'b5\'c8\'b7\'bd\'b7\'a8
+\f2 \
+
+\f1 \cf11 @TableName\cf5 (\cf10 "user"\cf5 )  \cf2 //
+\f0 \'b6\'d4\'d3\'a6\'b1\'ed\'c3\'f7
+\f2 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf6 public class \cf5 User \{\
+    \cf2 //
+\f0 \'d6\'f7\'bc\'fc
+\f2 \
+  
+\f1 \cf11 @TableId\cf5 (\cf10 "id"\cf5 )  \cf2 //
+\f0 \'b6\'d4\'d3\'a6\'d6\'f7\'bc\'fc
+\f2 \
+  
+\f1 \cf6 private \cf5 Long \cf12 id\cf6 ;\
+    \cf2 //
+\f0 \'d0\'d5\'c3\'fb
+\f2 \
+  
+\f1 \cf11 @TableField\cf5 (\cf10 "name"\cf5 )  \cf2 //
+\f0 \'b6\'d4\'d3\'a6\'c1\'d0\'c3\'fb
+\f2 \
+  
+\f1 \cf6 private \cf5 String \cf12 name\cf6 ;\
+    \cf2 //
+\f0 \'c4\'ea\'c1\'e4
+\f2 \
+  
+\f1 \cf11 @TableField\cf5 (\cf10 "age"\cf5 )\
+    \cf6 private \cf5 Integer \cf12 age\cf6 ;\
+    \cf2 //
+\f0 \'d3\'ca\'cf\'e4
+\f2 \
+  
+\f1 \cf11 @TableField\cf5 (\cf10 "email"\cf5 )\
+    \cf6 private \cf5 String \cf12 email\cf6 ;\
+    \cf2 //
+\f0 \'d6\'b1\'ca\'f4\'c9\'cf\'bc\'b6
+\f2 \
+  
+\f1 \cf11 @TableField\cf5 (\cf10 "manager_id"\cf5 )\
+    \cf6 private \cf5 Long \cf12 managerId\cf6 ;\
+    \cf2 //
+\f0 \'b4\'b4\'bd\'a8\'ca\'b1\'bc\'e4
+\f2 \
+  
+\f1 \cf11 @TableField\cf5 (\cf10 "create_time"\cf5 )\
+    \cf6 private \cf5 LocalDateTime \cf12 createTime\cf6 ;\
+\
+    
+\f3\i \cf13 /**\
+     * 
+\f0\i0 \'b1\'b8\'d7\'a2
+\f4\i  
+\f3 ; 
+\f0\i0 \'b1\'ed\'d6\'d0\'c3\'bb\'d3\'d0\'b4\'cb\'d7\'d6\'b6\'ce\'a3\'ac\'b2\'e5\'c8\'eb\'bb\'e1\'b1\'a8\'b4\'ed
+\f4\i \
+     
+\f3 * 
+\f0\i0 \'ba\'f6\'c2\'d4\'b4\'cb\'d7\'d6\'b6\'ce\'b5\'c4\'c8\'fd\'d6\'d6\'b7\'bd\'ca\'bd\'a3\'ba
+\f4\i \
+     
+\f3 *    
+\f0\i0 \'b7\'bd\'ca\'bd\'d2\'bb
+\f4\i  
+\f0\i0 \'a3\'ba
+\f4\i  
+\f0\i0 \'d4\'da\'c9\'f9\'c3\'f7\'d6\'d0\'bc\'d3\'c8\'eb
+\f3\i transient
+\f0\i0 \'b9\'d8\'bc\'fc\'d7\'d6
+\f4\i \
+     
+\f3 *    
+\f0\i0 \'b7\'bd\'ca\'bd\'b6\'fe
+\f4\i  
+\f0\i0 \'a3\'ba
+\f4\i  
+\f0\i0 \'d4\'da\'c9\'f9\'c3\'f7\'d6\'d0\'bc\'d3\'c8\'eb
+\f3\i static,
+\f0\i0 \'b2\'a2\'ce\'aa\'b4\'cb\'b1\'e4\'c1\'bf\'c9\'f9\'c3\'f7
+\f3\i get/set
+\f0\i0 \'b7\'bd\'b7\'a8
+\f4\i \
+     
+\f3 *    
+\f0\i0 \'b7\'bd\'ca\'bd\'c8\'fd
+\f4\i  
+\f0\i0 \'a3\'ba
+\f4\i  
+\f0\i0 \'cc\'ed\'bc\'d3
+\f3\i @TableField
+\f0\i0 \'d7\'a2\'bd\'e2\'a3\'ac\'b2\'a2\'c9\'e8\'d6\'c3
+\f3\i exist
+\f0\i0 \'ce\'aa
+\f3\i false
+\f0\i0 \'a3\'ac\'c4\'ac\'c8\'cf\'ce\'aa
+\f3\i true,
+\f0\i0 \'b1\'ed\'c3\'f7\'b4\'cb\'d7\'d6\'b6\'ce\'d4\'da\'ca\'fd\'be\'dd\'bf\'e2\'d6\'d0\'b4\'e6\'d4\'da
+\f4\i \
+     
+\f3 */\
+    
+\f1\i0 \cf11 @TableField\cf5 (\cf14 exist \cf5 = \cf6 false\cf5 )\
+    \cf6 private \cf5 String \cf12 remark\cf6 ;\
+\cf5 \}
+\f0 \cf0 \cb1 \
+5.\'b4\'b4\'bd\'a8\'bd\'d3\'bf\'da\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Mapper\
+\cf6 public interface \cf5 UserMapper \cf6 extends \cf5 BaseMapper<User> \{\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 6.\'b2\'e2\'ca\'d4\'b4\'fa\'c2\'eb\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @RunWith\cf5 (SpringRunner.\cf6 class\cf5 )\
+\cf11 @SpringBootTest\
+\cf6 public class \cf5 UserTest \{\
+\
+    \cf11 @Autowired\
+    \cf6 private \cf5 UserMapper \cf12 userMapper\cf6 ;\
+\
+    \cf11 @Test\
+    \cf6 public void \cf9 test\cf5 ()\{\
+        List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(\cf6 null\cf5 )\cf6 ;\
+        for \cf5 (User user : list)\{\
+            System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+        \cf5 \}\
+    \}\
+\
+    \cf11 @Test\
+    \cf6 public void \cf9 insert\cf5 ()\{\
+        User user = \cf6 new \cf5 User()\cf6 ;\
+        \cf5 user.setName(\cf10 "
+\f0 \'c0\'cf\'b7\'bd
+\f1 "\cf5 )\cf6 ;\
+        \cf5 user.setAge(\cf8 30\cf5 )\cf6 ;\
+        \cf5 user.setManagerId(\cf8 2l\cf5 )\cf6 ;\
+        \cf5 user.setId(\cf8 6l\cf5 )\cf6 ;\
+        \cf5 user.setCreateTime(LocalDateTime.
+\f3\i now
+\f1\i0 ())\cf6 ;\
+        int \cf5 index = \cf6 this\cf5 .\cf12 userMapper\cf5 .insert(user)\cf6 ;\
+        \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(index)\cf6 ;\
+    \cf5 \}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 \cb1 \
+\'cb\'c4.\'cd\'a8\'d3\'c3Mapper\
+
+\fs36 1.\'b2\'e9\'d1\'af\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf15 \'bb\'f9\'b1\'be\'b2\'e9\'d1\'af\'a3\'ba\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Test\
+\cf6 public void \cf9 selectById\cf5 ()\{\
+    User user = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectById(\cf8 1\cf5 )\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 @Test\
+\cf6 public void \cf9 selectIds\cf5 ()\{\
+    List<Long> list = Arrays.
+\f3\i asList
+\f1\i0 (\cf8 1L\cf6 ,\cf8 2L\cf6 ,\cf8 3L\cf6 ,\cf8 4L\cf5 )\cf6 ;\
+    \cf5 List<User> users = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectBatchIds(list)\cf6 ;\
+    for \cf5 (User user : users)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\cf11 @Test\
+\cf6 public void \cf9 selectByMap\cf5 ()\{\
+    Map<String\cf6 ,\cf5 Object> map = \cf6 new \cf5 HashMap<>()\cf6 ;\
+    \cf2 //key
+\f0 \'cb\'f9\'b4\'e6\'b5\'c4\'ca\'fd\'be\'dd\'ce\'aa\'ca\'fd\'be\'dd\'bf\'e2\'d6\'d0\'b5\'c4\'c1\'d0\'c3\'fb
+\f2 \
+  
+\f1 \cf5 map.put(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'d0\'a1\'cd\'f5
+\f1 "\cf5 )\cf6 ;\
+    \cf5 map.put(\cf10 "age"\cf6 ,\cf8 25\cf5 )\cf6 ;\
+    \cf5 List<User> users = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectByMap(map)\cf6 ;\
+    for \cf5 (User user : users)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf15 \cb1 \'d2\'d4\'cc\'f5\'bc\'fe\'b9\'b9\'d4\'ec\'c6\'f7\'ce\'aa\'b2\'ce\'ca\'fd\'b5\'c4\'b2\'e9\'d1\'af\'a3\'ba\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\i \cf13 \cb3 /**\
+ * 
+\f0\i0 \'c3\'fb\'d7\'d6\'d6\'d0\'d3\'d0\'cd\'f5\'d7\'d6\'a3\'ac\'b2\'a2\'c7\'d2\'c4\'ea\'c1\'e4\'d0\'a1\'d3\'da
+\f3\i 40\
+ */\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\i0 \cf11 @Test\
+\cf6 public void \cf9 selectByWrapper\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf2 //QueryWrapper<User> queryWrapper1 = Wrappers.query();\
+    \cf5 queryWrapper.like(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'cd\'f5
+\f1 "\cf5 ).lt(\cf10 "age"\cf6 ,\cf8 40\cf5 )\cf6 ;\
+    \cf5 List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(queryWrapper)\cf6 ;\
+    for \cf5 (User user : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\i \cf13 /**\
+ * 
+\f0\i0 \'c3\'fb\'d7\'d6\'d6\'d0\'d3\'d0\'cd\'f5\'d7\'d6\'a3\'ac\'b2\'a2\'c7\'d2\'c4\'ea\'c1\'e4\'d4\'da
+\f3\i 20
+\f0\i0 \'ba\'cd
+\f3\i 40
+\f0\i0 \'d6\'ae\'bc\'e4\'a3\'ac\'cd\'ac\'ca\'b1\'d3\'ca\'cf\'e4\'b2\'bb\'ce\'aa\'bf\'d5
+\f4\i \
+ 
+\f3 */\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\i0 \cf11 @Test\
+\cf6 public void \cf9 selectByWrapper1\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.like(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'cd\'f5
+\f1 "\cf5 ).between(\cf10 "age"\cf6 ,\cf8 20\cf6 ,\cf8 40\cf5 ).isNotNull(\cf10 "email"\cf5 )\cf6 ;\
+    \cf5 List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(queryWrapper)\cf6 ;\
+    for \cf5 (User user : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\i \cf13 /**\
+ * 
+\f0\i0 \'c3\'fb\'d7\'d6\'d2\'d4\'d0\'a1\'bf\'aa\'cd\'b7\'bb\'f2\'d5\'df\'c4\'ea\'c1\'e4\'b4\'f3\'d3\'da
+\f3\i 23
+\f0\i0 \'a3\'ac\'d3\'c3\'c4\'ea\'c1\'e4\'bd\'b5\'d0\'f2\'c5\'c5\'c1\'d0\'a3\'ac\'c8\'e7\'b9\'fb\'c4\'ea\'c1\'e4\'cf\'e0\'cd\'ac\'be\'cd\'d2\'d4
+\f3\i id
+\f0\i0 \'c9\'fd\'d0\'f2\'c5\'c5\'c1\'d0
+\f4\i \
+ 
+\f3 */\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\i0 \cf11 @Test\
+\cf6 public void \cf9 selectByWrapper2\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.likeRight(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'d0\'a1
+\f1 "\cf5 ).or().\
+            ge(\cf10 "age"\cf6 ,\cf8 23\cf5 ).orderByDesc(\cf10 "age"\cf5 ).orderByAsc(\cf10 "id"\cf5 )\cf6 ;\
+    \cf5 List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(queryWrapper)\cf6 ;\
+    for \cf5 (User user : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\i \cf13 /**\
+ * 
+\f0\i0 \'b4\'b4\'bd\'a8\'c8\'d5\'c6\'da\'ce\'aa
+\f3\i 2019-07-14
+\f0\i0 \'a3\'ac\'b2\'a2\'c7\'d2\'d6\'b1\'ca\'f4\'c9\'cf\'cb\'be\'c3\'fb\'d7\'d6\'ce\'aa\'d0\'a1\'d0\'d4
+\f4\i \
+ 
+\f3 */\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\i0 \cf11 @Test\
+\cf6 public void \cf9 selectByWrapper3\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.apply(\cf10 "date_format(create_time,'%Y-%m-%d') = \{0\}"\cf6 ,\cf10 "2019-07-14"\cf5 )\
+            .inSql(\cf10 "manager_id"\cf6 ,\cf10 "select id from user where name like '
+\f0 \'d0\'a1
+\f1 %'"\cf5 )\cf6 ;\
+    \cf5 List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(queryWrapper)\cf6 ;\
+    for \cf5 (User user : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\i \cf13 /**\
+ * 
+\f0\i0 \'c3\'fb\'d7\'d6\'d0\'d5\'d0\'a1\'a3\'a8\'c4\'ea\'c1\'e4\'d0\'a1\'d3\'da
+\f3\i 40
+\f0\i0 \'bb\'f2\'d5\'df\'d3\'ca\'cf\'e4\'b2\'bb\'ce\'aa\'bf\'d5\'a3\'a9
+\f4\i \
+ 
+\f3 */\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\i0 \cf11 @Test\
+\cf6 public void \cf9 selectByWrapper4\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.likeRight(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'d0\'a1
+\f1 "\cf5 ).and(wq->wq.\
+            lt(\cf10 "age"\cf6 ,\cf8 40\cf5 ).or().isNotNull(\cf10 "email"\cf5 ))\cf6 ;\
+    \cf5 List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(queryWrapper)\cf6 ;\
+    for \cf5 (User user : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\i \cf13 /**\
+ * 
+\f0\i0 \'d0\'d5\'d0\'a1\'bb\'f2\'d5\'df\'a3\'a8\'c4\'ea\'c1\'e4\'d0\'a1\'d3\'da
+\f3\i 40
+\f0\i0 \'b4\'f3\'d3\'da
+\f3\i 20
+\f0\i0 \'b2\'a2\'c7\'d2\'d3\'ca\'cf\'e4\'b2\'bb\'ce\'aa\'bf\'d5\'a3\'a9
+\f4\i \
+ 
+\f3 */\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\i0 \cf11 @Test\
+\cf6 public void \cf9 selectByWrapper5\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.likeRight(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'d0\'a1
+\f1 "\cf5 ).or(wq->wq.lt(\cf10 "age"\cf6 ,\cf8 40\cf5 )\
+            .gt(\cf10 "age"\cf6 ,\cf8 20\cf5 ).isNotNull(\cf10 "email"\cf5 ))\cf6 ;\
+    \cf5 List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(queryWrapper)\cf6 ;\
+    for \cf5 (User user : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\i \cf13 /**\
+ * (
+\f0\i0 \'c4\'ea\'c1\'e4\'d0\'a1\'d3\'da
+\f3\i 40
+\f0\i0 \'bb\'f2\'d5\'df\'d3\'ca\'cf\'e4\'b2\'bb\'ce\'aa\'bf\'d5
+\f3\i )
+\f0\i0 \'b2\'a2\'c7\'d2\'c3\'fb\'d7\'d6\'d0\'d5\'d0\'a1
+\f4\i \
+ 
+\f3 */\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\i0 \cf11 @Test\
+\cf6 public void \cf9 selectByWrapper6\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.nested(wq->wq.lt(\cf10 "age"\cf6 ,\cf8 40\cf5 ).isNotNull(\cf10 "email"\cf5 )).likeRight(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'d0\'a1
+\f1 "\cf5 )\cf6 ;\
+    \cf5 List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(queryWrapper)\cf6 ;\
+    for \cf5 (User user : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\i \cf13 /**\
+ * 
+\f0\i0 \'c4\'ea\'c1\'e4\'ce\'aa
+\f3\i 25 28 31 32\
+ */\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\i0 \cf11 @Test\
+\cf6 public void \cf9 selectByWrapper7\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.in(\cf10 "age"\cf6 ,\cf5 Arrays.
+\f3\i asList
+\f1\i0 (\cf8 25\cf6 ,\cf8 28\cf6 ,\cf8 31\cf6 ,\cf8 32\cf5 ))\cf6 ;\
+    \cf5 List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(queryWrapper)\cf6 ;\
+    for \cf5 (User user : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\i \cf13 /**\
+ * 
+\f0\i0 \'d6\'bb\'b7\'b5\'bb\'d8\'c2\'fa\'d7\'e3\'cc\'f5\'bc\'fe\'d6\'d0\'b5\'c4\'d2\'bb\'cc\'f5\'bc\'b4\'bf\'c9
+\f4\i \
+ 
+\f3 */\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\i0 \cf11 @Test\
+\cf6 public void \cf9 selectByWrapper8\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.in(\cf10 "age"\cf6 ,\cf5 Arrays.
+\f3\i asList
+\f1\i0 (\cf8 25\cf6 ,\cf8 28\cf6 ,\cf8 31\cf6 ,\cf8 32\cf5 )).last(\cf10 "limit 1"\cf5 )\cf6 ;\
+    \cf5 List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(queryWrapper)\cf6 ;\
+    for \cf5 (User user : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf15 \cb1 Select\'d6\'d0\'d7\'d6\'b6\'ce\'b2\'bb\'c8\'ab\'b2\'bf\'b3\'f6\'cf\'d6\'b5\'c4\'b4\'a6\'c0\'ed\'a3\'ba\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\i \cf13 \cb3 /**\
+ * 
+\f0\i0 \'c3\'fb\'d7\'d6\'d6\'d0\'d3\'d0\'cd\'f5\'d7\'d6\'a3\'ac\'b2\'a2\'c7\'d2\'c4\'ea\'c1\'e4\'d0\'a1\'d3\'da
+\f3\i 40\
+ */\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\i0 \cf11 @Test\
+\cf6 public void \cf9 selectByWrapperSupper\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.\cf16 \cb17 select("id","name")\cf5 \cb3 .like(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'cd\'f5
+\f1 "\cf5 ).lt(\cf10 "age"\cf6 ,\cf8 40\cf5 )\cf6 ;\
+    \cf5 List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(queryWrapper)\cf6 ;\
+    for \cf5 (User user : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\i \cf13 /**\
+ * 
+\f0\i0 \'c3\'fb\'d7\'d6\'d6\'d0\'d3\'d0\'cd\'f5\'d7\'d6\'a3\'ac\'b2\'a2\'c7\'d2\'c4\'ea\'c1\'e4\'d0\'a1\'d3\'da
+\f3\i 40\
+ */\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\i0 \cf11 @Test\
+\cf6 public void \cf9 selectByWrapperSupper2\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.like(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'cd\'f5
+\f1 "\cf5 ).lt(\cf10 "age"\cf6 ,\cf8 40\cf5 ).\
+            select(User.\cf6 class,\cf5 info->!info.getColumn().equals(\cf10 "manager_id"\cf5 )&&\
+                    !info.getColumn().equals(\cf10 "create_time"\cf5 ))\cf6 ;\
+    \cf5 List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(queryWrapper)\cf6 ;\
+    for \cf5 (User user : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf15 \cb1 condition\'b5\'c4\'d7\'f7\'d3\'c3:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf6 \cb3 public void \cf9 condition\cf5 (String name\cf6 ,\cf5 String email)\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.like(StringUtils.
+\f3\i isNotEmpty
+\f1\i0 (name)\cf6 ,\cf10 "name"\cf6 ,\cf5 name).\
+            like(StringUtils.
+\f3\i isNotEmpty
+\f1\i0 (email)\cf6 ,\cf10 "email"\cf6 ,\cf5 name)\cf6 ;\
+    \cf5 List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(queryWrapper)\cf6 ;\
+    for \cf5 (User user : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\cf11 @Test\
+\cf6 public void \cf9 testCondition\cf5 ()\{\
+    String name = \cf10 "
+\f0 \'cd\'f5
+\f1 "\cf6 ;\
+    \cf5 String email = \cf10 ""\cf6 ;\
+    \cf5 condition(name\cf6 ,\cf5 email)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf15 \cb1 \'b4\'b4\'d4\'ec\'cc\'f5\'bc\'fe\'b9\'b9\'d4\'ec\'c6\'f7\'ca\'b1\'b4\'ab\'c8\'eb\'ca\'b5\'cc\'e5\'b6\'d4\'cf\'f3:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Test\
+\cf6 public void \cf9 testByWrapperEntity\cf5 ()\{\
+    User user = \cf6 new \cf5 User()\cf6 ;\
+    \cf5 user.setName(\cf10 "
+\f0 \'d0\'a1\'c3\'ab
+\f1 "\cf5 )\cf6 ;\
+    \cf5 user.setAge(\cf8 31\cf5 )\cf6 ;\
+    \cf5 QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>\cb16 (user)\cf6 \cb3 ;\
+    \cf5 queryWrapper.like(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'c3\'ab
+\f1 "\cf5 ).eq(\cf10 "age"\cf6 ,\cf8 31\cf5 )\cf6 ;\
+    \cf5 List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(queryWrapper)\cf6 ;\
+    for \cf5 (User user1 : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user1)\cf6 ;\
+    \cf5 \}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf15 \cb1 \'b4\'b4\'d4\'ec\'cc\'f5\'bc\'fe\'b9\'b9\'d4\'ec\'c6\'f7\'d6\'d0allEq\'d3\'c3\'b7\'a8\'a3\'ba\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Test\
+\cf6 public void \cf9 testAllEq\cf5 ()\{\
+    Map<String\cf6 ,\cf5 Object> map = \cf6 new \cf5 HashMap<>()\cf6 ;\
+    \cf5 map.put(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'d0\'a1\'cd\'f5
+\f1 "\cf5 )\cf6 ;\
+    \cf5 map.put(\cf10 "age"\cf6 ,null\cf5 )\cf6 ;\
+    \cf5 QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf2 //queryWrapper.allEq(map,false);\
+    \cf5 queryWrapper.allEq((k\cf6 ,\cf5 v)->!k.equals(\cf10 "name"\cf5 )\cf6 ,\cf5 map)\cf6 ;\
+    \cf5 List<User> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(queryWrapper)\cf6 ;\
+    for \cf5 (User user : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf15 \cb1 \'c6\'e4\'cb\'fb\'b4\'b4\'d4\'ec\'cc\'f5\'bc\'fe\'b9\'b9\'d4\'ec\'c6\'f7\'a3\'ba\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Test\
+\cf6 public void \cf9 selectByWrapperMaps\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.like(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'d0\'a1
+\f1 "\cf5 ).lt(\cf10 "age"\cf6 ,\cf8 40\cf5 ).select(\cf10 "id"\cf6 ,\cf10 "name"\cf5 )\cf6 ;\
+    \cf5 List<Map<String\cf6 ,\cf5 Object>> maps = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectMaps(queryWrapper)\cf6 ;\
+    for \cf5 (Map map : maps)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(map)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\cf11 @Test\
+\cf6 public void \cf9 selectByWrapperMap2\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.select(\cf10 "avg(age) avg_age"\cf6 ,\cf10 "min(age) min_age"\cf6 ,\cf10 "max(age) max_age"\cf5 )\
+            .groupBy(\cf10 "manager_id"\cf5 ).having(\cf10 "sum(age)<\{0\}"\cf6 ,\cf8 100\cf5 )\cf6 ;\
+    \cf5 List<Map<String\cf6 ,\cf5 Object>> maps = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectMaps(queryWrapper)\cf6 ;\
+    for \cf5 (Map map : maps)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(map)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\cf11 @Test\
+\cf6 public void \cf9 selectByWrapperObjs\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.like(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'d0\'a1
+\f1 "\cf5 ).lt(\cf10 "age"\cf6 ,\cf8 40\cf5 )\cf6 ;\
+    \cf5 List<Object> list = \cf6 this\cf5 .\cf12 userMapper\cf5 .\cf16 selectObjs\cf5 (queryWrapper)\cf6 ;\
+    for \cf5 (Object obj : list)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(obj)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\cf11 @Test\
+\cf6 public void \cf9 selectByWrapperCount\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.like(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'d0\'a1
+\f1 "\cf5 ).lt(\cf10 "age"\cf6 ,\cf8 40\cf5 )\cf6 ;\
+    \cf5 Integer index = \cf6 this\cf5 .\cf12 userMapper\cf5 .\cf16 selectCount\cf5 (queryWrapper)\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(index)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 @Test\
+\cf6 public void \cf9 selectByWrapperOne\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.like(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'d0\'a1\'cd\'f5
+\f1 "\cf5 )\cf6 ;\
+    \cf5 User user = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectOne(queryWrapper)\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf15 \cb1 Lambda\'cc\'f5\'bc\'fe\'b9\'b9\'d4\'ec\'c6\'f7\'a3\'ba\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Test\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf6 public void \cf9 selectLambda\cf5 ()\{\
+    \cf2 //LambdaQueryWrapper<User> lambda = new QueryWrapper<User>().lambda();\
+    //LambdaQueryWrapper<User> lambdaQueryWrapper = new LambdaQueryWrapper<>();\
+    \cf5 LambdaQueryWrapper<User> lambdaQuery = Wrappers.
+\f3\i lambdaQuery
+\f1\i0 ()\cf6 ;\
+    \cf5 lambdaQuery.like(User::getName\cf6 ,\cf10 "
+\f0 \'d0\'a1
+\f1 "\cf5 ).lt(User::getAge\cf6 ,\cf8 40\cf5 )\cf6 ;\
+    \cf5 List<User> users = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(lambdaQuery)\cf6 ;\
+    for \cf5 (User user : users)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf11 @Test\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf6 public void \cf9 selectLambda1\cf5 ()\{\
+    LambdaQueryWrapper<User> lambdaQuery = Wrappers.
+\f3\i lambdaQuery
+\f1\i0 ()\cf6 ;\
+    \cf5 lambdaQuery.likeRight(User::getName\cf6 ,\cf10 "
+\f0 \'d0\'a1
+\f1 "\cf5 ).and(wq->wq.lt(User::getAge\cf6 ,\cf8 40\cf5 )\
+                .or().isNotNull(User::getEmail))\cf6 ;\
+    \cf5 List<User> users = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectList(lambdaQuery)\cf6 ;\
+    for \cf5 (User user : users)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf11 @Test\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf6 public void \cf9 selectLambda2\cf5 ()\{\
+    List<User> users = \cf6 new \cf5 LambdaQueryChainWrapper<User>(\cf12 userMapper\cf5 ).like(User::getName\cf6 ,\cf10 "
+\f0 \'d0\'a1
+\f1 "\cf5 ).\
+            ge(User::getAge\cf6 ,\cf8 20\cf5 ).list()\cf6 ;\
+    for \cf5 (User user : users)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf15 \cb1 \'cc\'f5\'bc\'fe\'b9\'b9\'d4\'ec\'c6\'f7\'b5\'c4\'d7\'d4\'b6\'a8\'d2\'e5SQL:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf17 1.\'bd\'d3\'bf\'da\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Mapper\
+\cf6 public interface \cf5 UserMapper \cf6 extends \cf5 BaseMapper<User> \{\
+\
+    \cf11 @Select\cf5 (\cf10 "select * from user $\{ew.customSqlSegment\}"\cf5 )\
+    List<User> \cf9 selectAll\cf5 (\cf11 @Param\cf5 (Constants.
+\f3\i \cf12 WRAPPER
+\f1\i0 \cf5 ) Wrapper<User> wrapper)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf17 \cb1 2.\'b2\'e2\'ca\'d4\'b4\'fa\'c2\'eb\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Test\
+\cf6 public void \cf9 selectMy\cf5 ()\{\
+    LambdaQueryWrapper<User> lambdaQuery = Wrappers.
+\f3\i lambdaQuery
+\f1\i0 ()\cf6 ;\
+    \cf5 lambdaQuery.likeRight(User::getName\cf6 ,\cf10 "
+\f0 \'d0\'a1
+\f1 "\cf5 ).and(wq->wq.lt(User::getAge\cf6 ,\cf8 40\cf5 )\
+            .or().isNotNull(User::getEmail))\cf6 ;\
+    \cf5 List<User> users = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectAll(lambdaQuery)\cf6 ;\
+    for \cf5 (User user : users)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf17 \cb1 1.\'bd\'d3\'bf\'da(\'ca\'b9\'d3\'c3xml\'ce\'c4\'bc\'fe)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Mapper\
+\cf6 public interface \cf5 UserMapper \cf6 extends \cf5 BaseMapper<User> \{\
+    \
+    List<User> \cf9 selectAll\cf5 (\cf11 @Param\cf5 (Constants.
+\f3\i \cf12 WRAPPER
+\f1\i0 \cf5 ) Wrapper<User> wrapper)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf17 \cb1 2.\'d4\'daapplication.properties\'d6\'d0\'c5\'e4\'d6\'c3\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf6 \cb3 mybatis-plus\cf5 :\
+  \cf6 mapper-locations\cf5 : classpath:mapper/*.xml\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf17 \cb1 3.xml\'c5\'e4\'d6\'c3\'ce\'c4\'bc\'fe\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf4 \cb3 <?\cf18 xml version\cf10 ="1.0" \cf18 encoding\cf10 ="UTF-8" \cf4 ?>\
+<!DOCTYPE \cf18 mapper \cf4 PUBLIC \cf10 "-//mybatis.org//DTD Mapper 3.0//EN"\
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd"\cf4 >\
+<mapper \cf18 namespace\cf10 ="com.example.mp.dao.UserMapper"\cf4 >\
+    <select \cf18 id\cf10 ="selectAll" \cf18 resultType\cf10 ="com.example.mp.pojo.User"\cf4 >\
+        \cf5 select \cf9 * \cf5 from user $\{ew.customSqlSegment\}\
+    \cf4 </select>\
+</mapper>\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf17 \cb1 4.\'b2\'e2\'ca\'d4\'b4\'fa\'c2\'eb\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Test\
+\cf6 public void \cf9 selectMy\cf5 ()\{\
+    LambdaQueryWrapper<User> lambdaQuery = Wrappers.
+\f3\i lambdaQuery
+\f1\i0 ()\cf6 ;\
+    \cf5 lambdaQuery.likeRight(User::getName\cf6 ,\cf10 "
+\f0 \'d0\'a1
+\f1 "\cf5 ).and(wq->wq.lt(User::getAge\cf6 ,\cf8 40\cf5 )\
+            .or().isNotNull(User::getEmail))\cf6 ;\
+    \cf5 List<User> users = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectAll(lambdaQuery)\cf6 ;\
+    for \cf5 (User user : users)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf15 \cb1 MP\'b7\'d6\'d2\'b3\'b2\'e5\'bc\'fe\'ca\'b5\'cf\'d6\'ce\'ef\'c0\'ed\'b7\'d6\'d2\'b3:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf17 1.\'c5\'e4\'d6\'c3\'c0\'e0\cf15 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Configuration\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf6 public class \cf5 MybatisPlusConfig \{\
+\
+    \cf11 @Bean\
+    \cf6 public \cf5 PaginationInterceptor \cf9 paginationInterceptor\cf5 ()\{\
+        \cf6 return new \cf5 PaginationInterceptor()\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf17 \cb1 2.\'b2\'e2\'ca\'d4\'b4\'fa\'c2\'eb\cf15 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Test\
+\cf6 public void \cf9 selectPage\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.ge(\cf10 "age"\cf6 ,\cf8 20\cf5 )\cf6 ;\
+    \cf5 Page<User> page = \cf6 new \cf5 Page(\cf8 1\cf6 ,\cf8 2\cf5 )\cf6 ;\
+    \cf5 IPage<User> iPage = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectPage(page\cf6 ,\cf5 queryWrapper)\cf6 ;\
+    \cf2 //
+\f0 \'d7\'dc\'d2\'b3\'ca\'fd
+\f2 \
+  
+\f1 \cf5 Long pages = iPage.getPages()\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(pages)\cf6 ;\
+    \cf2 //
+\f0 \'d7\'dc\'bc\'c7\'c2\'bc\'ca\'fd
+\f2 \
+  
+\f1 \cf5 Long total = iPage.getTotal()\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(total)\cf6 ;\
+    \cf5 List<User> users = iPage.getRecords()\cf6 ;\
+    for \cf5 (User user : users)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\
+\cf11 @Test\
+\cf6 public void \cf9 selectPage1\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.ge(\cf10 "age"\cf6 ,\cf8 20\cf5 )\cf6 ;\
+    \cf5 Page<User> page = \cf6 new \cf5 Page(\cf8 1\cf6 ,\cf8 2\cf6 ,false\cf5 )\cf6 ;\
+    \cf5 IPage<Map<String\cf6 ,\cf5 Object>> iPage = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectMapsPage(page\cf6 ,\cf5 queryWrapper)\cf6 ;\
+    \cf2 //
+\f0 \'d7\'dc\'d2\'b3\'ca\'fd
+\f2 \
+  
+\f1 \cf5 Long pages = iPage.getPages()\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(pages)\cf6 ;\
+    \cf2 //
+\f0 \'d7\'dc\'bc\'c7\'c2\'bc\'ca\'fd
+\f2 \
+  
+\f1 \cf5 Long total = iPage.getTotal()\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(total)\cf6 ;\
+    \cf5 List<Map<String\cf6 ,\cf5 Object>> users = iPage.getRecords()\cf6 ;\
+    for \cf5 (Map map : users)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(map)\cf6 ;\
+    \cf5 \}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf15 \cb1 \'d7\'d4\'b6\'a8\'d2\'e5\'b7\'bd\'b7\'a8MP\'b7\'d6\'d2\'b3\'b2\'e5\'bc\'fe\'ca\'b5\'cf\'d6\'ce\'ef\'c0\'ed\'b7\'d6\'d2\'b3:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf17 1.\'bd\'d3\'bf\'da\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Mapper\
+\cf6 public interface \cf5 UserMapper \cf6 extends \cf5 BaseMapper<User> \{\
+    IPage<User> \cf9 selectUserPage\cf5 (Page<User> page\cf6 ,\cf11 @Param\cf5 (Constants.
+\f3\i \cf12 WRAPPER
+\f1\i0 \cf5 ) Wrapper<User>             wrapper)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf17 \cb1 2.xml\'ce\'c4\'bc\'fe\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf5 \cb3 \
+\cf4 <select \cf18 id\cf10 ="selectUserPage" \cf18 resultType\cf10 ="com.example.mp.pojo.User"\cf4 >\
+    \cf5 select \cf9 * \cf5 from user $\{ew.customSqlSegment\}\
+\cf4 </select>\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf17 \cb1 3.\'b2\'e2\'ca\'d4\'b4\'fa\'c2\'eb\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Test\
+\cf6 public void \cf9 selectMyPage\cf5 ()\{\
+    QueryWrapper<User> queryWrapper = \cf6 new \cf5 QueryWrapper<>()\cf6 ;\
+    \cf5 queryWrapper.ge(\cf10 "age"\cf6 ,\cf8 20\cf5 )\cf6 ;\
+    \cf5 Page<User> page = \cf6 new \cf5 Page(\cf8 1\cf6 ,\cf8 2\cf5 )\cf6 ;\
+    \cf5 IPage<User> iPage = \cf6 this\cf5 .\cf12 userMapper\cf5 .selectUserPage(page\cf6 ,\cf5 queryWrapper)\cf6 ;\
+    \cf2 //
+\f0 \'d7\'dc\'d2\'b3\'ca\'fd
+\f2 \
+  
+\f1 \cf5 Long pages = iPage.getPages()\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(pages)\cf6 ;\
+    \cf2 //
+\f0 \'d7\'dc\'bc\'c7\'c2\'bc\'ca\'fd
+\f2 \
+  
+\f1 \cf5 Long total = iPage.getTotal()\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(total)\cf6 ;\
+    \cf5 List<User> users = iPage.getRecords()\cf6 ;\
+    for \cf5 (User user : users)\{\
+        System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user)\cf6 ;\
+    \cf5 \}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf15 \cb1 MP\'ca\'b5\'cf\'d6\'b8\'fc\'d0\'c2\'a3\'ba\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Test\
+\cf6 public void \cf9 updateById\cf5 ()\{\
+    User user = \cf6 new \cf5 User()\cf6 ;\
+    \cf5 user.setId(\cf8 6L\cf5 )\cf6 ;\
+    \cf5 user.setEmail(\cf10 "laowan@cojd.com"\cf5 )\cf6 ;\
+    int \cf5 index = \cf6 this\cf5 .\cf12 userMapper\cf5 .updateById(user)\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(index)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 @Test\
+\cf6 public void \cf9 updateByWrapper\cf5 ()\{\
+    UpdateWrapper<User> updateWrapper = \cf6 new \cf5 UpdateWrapper<>()\cf6 ;\
+    \cf5 updateWrapper.eq(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'c0\'cf\'cd\'f2
+\f1 "\cf5 ).eq(\cf10 "age"\cf6 ,\cf8 30\cf5 )\cf6 ;\
+    \cf5 User user = \cf6 new \cf5 User()\cf6 ;\
+    \cf5 user.setAge(\cf8 35\cf5 )\cf6 ;\
+    int \cf5 index = \cf6 this\cf5 .\cf12 userMapper\cf5 .update(user\cf6 ,\cf5 updateWrapper)\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(index)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 @Test\
+\cf6 public void \cf9 updateByWrapper1\cf5 ()\{\
+    User wherwUser = \cf6 new \cf5 User()\cf6 ;\
+    \cf5 wherwUser.setName(\cf10 "
+\f0 \'c0\'cf\'cd\'f2
+\f1 "\cf5 )\cf6 ;\
+    \cf5 UpdateWrapper<User> updateWrapper = \cf6 new \cf5 UpdateWrapper<>(wherwUser)\cf6 ;\
+    \cf5 updateWrapper.eq(\cf10 "age"\cf6 ,\cf8 21\cf5 )\cf6 ;\
+    \cf5 User user = \cf6 new \cf5 User()\cf6 ;\
+    \cf5 user.setAge(\cf8 35\cf5 )\cf6 ;\
+    int \cf5 index = \cf6 this\cf5 .\cf12 userMapper\cf5 .update(user\cf6 ,\cf5 updateWrapper)\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(index)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 @Test\
+\cf6 public void \cf9 updateByWrapper2\cf5 ()\{\
+    UpdateWrapper<User> updateWrapper = \cf6 new \cf5 UpdateWrapper<>()\cf6 ;\
+    \cf5 updateWrapper.eq(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'c0\'cf\'cd\'f2
+\f1 "\cf5 ).eq(\cf10 "age"\cf6 ,\cf8 35\cf5 ).set(\cf10 "age"\cf6 ,\cf8 25\cf5 )\cf6 ;\
+    int \cf5 index = \cf6 this\cf5 .\cf12 userMapper\cf5 .update(\cf6 null,\cf5 updateWrapper)\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(index)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 @Test\
+\cf6 public void \cf9 updateByWrapperLambda\cf5 ()\{\
+    LambdaUpdateWrapper<User> lambdaUpdateWrapper = Wrappers.
+\f3\i lambdaUpdate
+\f1\i0 ()\cf6 ;\
+    \cf5 lambdaUpdateWrapper.eq(User::getName\cf6 ,\cf10 "
+\f0 \'c0\'cf\'cd\'f2
+\f1 "\cf5 ).eq(User::getAge\cf6 ,\cf8 25\cf5 ).set(User::getAge\cf6 ,\cf8 20\cf5 )\cf6 ;\
+    int \cf5 index = \cf6 this\cf5 .\cf12 userMapper\cf5 .update(\cf6 null,\cf5 lambdaUpdateWrapper)\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(index)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 @Test\
+\cf6 public void \cf9 updateByWrapperLambda1\cf5 ()\{\
+    \cf6 boolean \cf5 update = \cf6 new \cf5 LambdaUpdateChainWrapper<User>(\cf12 userMapper\cf5 )\
+            .eq(User::getName\cf6 ,\cf10 "
+\f0 \'c0\'cf\'cd\'f2
+\f1 "\cf5 ).eq(User::getAge\cf6 ,\cf8 20\cf5 ).set(User::getAge\cf6 ,\cf8 21\cf5 )\
+            .update()\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(update)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf15 \cb1 MP\'ca\'b5\'cf\'d6\'c9\'be\'b3\'fd\'a3\'ba\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Test\
+\cf6 public void \cf9 deleteById\cf5 ()\{\
+    \cf6 int \cf5 index = \cf6 this\cf5 .\cf12 userMapper\cf5 .deleteById(\cf8 6\cf5 )\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(index)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 @Test\
+\cf6 public void \cf9 deleteByMap\cf5 ()\{\
+    Map<String\cf6 ,\cf5 Object> map = \cf6 new \cf5 HashMap<>()\cf6 ;\
+    \cf5 map.put(\cf10 "name"\cf6 ,\cf10 "
+\f0 \'d0\'a1\'ce\'e2
+\f1 "\cf5 )\cf6 ;\
+    \cf5 map.put(\cf10 "age"\cf6 ,\cf8 32\cf5 )\cf6 ;\
+    int \cf5 index = \cf6 this\cf5 .\cf12 userMapper\cf5 .deleteByMap(map)\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(index)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 @Test\
+\cf6 public void \cf9 deleteByBatchIds\cf5 ()\{\
+    \cf6 int \cf5 index = \cf6 this\cf5 .\cf12 userMapper\cf5 .deleteBatchIds(Arrays.
+\f3\i asList
+\f1\i0 (\cf8 3L\cf6 ,\cf8 4L\cf5 ))\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(index)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 @Test\
+\cf6 public void \cf9 deleteByWrapperLambda\cf5 ()\{\
+    LambdaQueryWrapper<User> lambdaQueryWrapper = Wrappers.
+\f3\i lambdaQuery
+\f1\i0 ()\cf6 ;\
+    \cf5 lambdaQueryWrapper.eq(User::getAge\cf6 ,\cf8 25\cf5 ).or().gt(User::getAge\cf6 ,\cf8 41\cf5 )\cf6 ;\
+    int \cf5 index = \cf6 this\cf5 .\cf12 userMapper\cf5 .delete(lambdaQueryWrapper)\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(index)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 \cb1 \
+\'cb\'c4.ActiveRecord\'c4\'a3\'ca\'bd\
+
+\fs36 1.AR\'c4\'a3\'ca\'bd\'bc\'f2\'bd\'e9\
+2.\'ca\'b5\'cc\'e5\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Data  \cf2 //
+\f0 \'c9\'fa\'b3\'c9\'b3\'a3\'d3\'c3\'b5\'c4\'b7\'bd\'b7\'a8\'c8\'e7
+\f1 get/set/toString
+\f0 \'b5\'c8\'b5\'c8\'b7\'bd\'b7\'a8
+\f2 \
+
+\f1 \cf11 @TableName\cf5 (\cf10 "user"\cf5 )  \cf2 //
+\f0 \'b6\'d4\'d3\'a6\'b1\'ed\'c3\'f7
+\f2 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf15 \cb3 @EqualsAndHashCode(callSuper = false)\cf5 \cb3 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf6 public class \cf5 User \cf6 extends \cf15 \cb3 Model<User>\cf5 \cb3  \{\
+    \cf2 //
+\f0 \'d6\'f7\'bc\'fc
+\f2 \
+  
+\f1 \cf11 @TableId\cf5 (\cf10 "id"\cf5 )  \cf2 //
+\f0 \'b6\'d4\'d3\'a6\'d6\'f7\'bc\'fc
+\f2 \
+  
+\f1 \cf6 private \cf5 Long \cf12 id\cf6 ;\
+    \cf2 //
+\f0 \'d0\'d5\'c3\'fb
+\f2 \
+  
+\f1 \cf11 @TableField\cf5 (\cf10 "name"\cf5 )  \cf2 //
+\f0 \'b6\'d4\'d3\'a6\'c1\'d0\'c3\'fb
+\f2 \
+  
+\f1 \cf6 private \cf5 String \cf12 name\cf6 ;\
+    \cf2 //
+\f0 \'c4\'ea\'c1\'e4
+\f2 \
+  
+\f1 \cf11 @TableField\cf5 (\cf10 "age"\cf5 )\
+    \cf6 private \cf5 Integer \cf12 age\cf6 ;\
+    \cf2 //
+\f0 \'d3\'ca\'cf\'e4
+\f2 \
+  
+\f1 \cf11 @TableField\cf5 (\cf10 "email"\cf5 )\
+    \cf6 private \cf5 String \cf12 email\cf6 ;\
+    \cf2 //
+\f0 \'d6\'b1\'ca\'f4\'c9\'cf\'bc\'b6
+\f2 \
+  
+\f1 \cf11 @TableField\cf5 (\cf10 "manager_id"\cf5 )\
+    \cf6 private \cf5 Long \cf12 managerId\cf6 ;\
+    \cf2 //
+\f0 \'b4\'b4\'bd\'a8\'ca\'b1\'bc\'e4
+\f2 \
+  
+\f1 \cf11 @TableField\cf5 (\cf10 "create_time"\cf5 )\
+    \cf6 private \cf5 LocalDateTime \cf12 createTime\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \cb1 3.\'b2\'e2\'ca\'d4\'b4\'fa\'c2\'eb\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf11 \cb3 @Test\
+\cf6 public void \cf9 insert\cf5 ()\{\
+    User user = \cf6 new \cf5 User()\cf6 ;\
+    \cf5 user.setName(\cf10 "
+\f0 \'c3\'ab\'c3\'ab
+\f1 "\cf5 )\cf6 ;\
+    \cf5 user.setAge(\cf8 32\cf5 )\cf6 ;\
+    \cf5 user.setEmail(\cf10 "maomao@@tiuanjin.com"\cf5 )\cf6 ;\
+    \cf5 user.setCreateTime(LocalDateTime.
+\f3\i now
+\f1\i0 ())\cf6 ;\
+    \cf5 user.setManagerId(\cf8 1L\cf5 )\cf6 ;\
+    boolean \cf5 insert = user.insert()\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(insert)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 @Test\
+\cf6 public void \cf9 select\cf5 ()\{\
+    User user = \cf6 new \cf5 User()\cf6 ;\
+    \cf5 User user1 = user.selectById(\cf8 1\cf5 )\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user1)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 @Test\
+\cf6 public void \cf9 select1\cf5 ()\{\
+    User user = \cf6 new \cf5 User()\cf6 ;\
+    \cf5 user.setId(\cf8 1L\cf5 )\cf6 ;\
+    \cf5 User user1 = user.selectById()\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(user1)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 @Test\
+\cf6 public void \cf9 update\cf5 ()\{\
+    User user = \cf6 new \cf5 User()\cf6 ;\
+    \cf5 user.setId(\cf8 1L\cf5 )\cf6 ;\
+    \cf5 user.setName(\cf10 "
+\f0 \'c3\'ab\'c3\'ab\'c3\'ab
+\f1 "\cf5 )\cf6 ;\
+    boolean \cf5 update = user.updateById()\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(update)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 @Test\
+\cf6 public void \cf9 delete\cf5 ()\{\
+    User user = \cf6 new \cf5 User()\cf6 ;\
+    \cf5 user.setId(\cf8 1151473850731204609L\cf5 )\cf6 ;\
+    boolean \cf5 delete = user.deleteById()\cf6 ;\
+    \cf5 System.
+\f3\i \cf12 out
+\f1\i0 \cf5 .println(delete)\cf6 ;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 \}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 \cb1 \
+\'ce\'e5.\'d6\'f7\'bc\'fc\'b2\'df\'c2\'d4\
+
+\fs36 1.\'be\'d6\'b2\'bf\'d6\'f7\'bc\'fc\'b2\'df\'c2\'d4\
+2.\'c8\'ab\'be\'d6\'d6\'f7\'bc\'fc\'b2\'df\'c2\'d4\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf6 \cb3 mybatis-plus\cf5 :\
+  \cf6 global-config\cf5 :\
+    \cf6 db-config\cf5 :\
+      \cf6 id-type\cf5 : \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 \cb1 \
+\'c1\'f9.MP\'c5\'e4\'d6\'c3\
+\'c6\'df.\'cd\'a8\'d3\'c3Service}

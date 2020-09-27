@@ -1,0 +1,310 @@
+{\rtf1\ansi\ansicpg936\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fnil\fcharset134 PingFangSC-Regular;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fswiss\fcharset0 Helvetica-Oblique;\f4\fnil\fcharset0 Menlo-Italic;}
+{\colortbl;\red255\green255\blue255;\red251\green2\blue255;\red251\green2\blue7;\red0\green0\blue0;
+\red173\green169\blue32;\red32\green32\blue32;\red153\green168\blue186;\red191\green100\blue38;\red254\green187\blue91;
+\red88\green118\blue71;\red86\green132\blue173;\red109\green109\blue109;\red133\green96\blue154;\red81\green136\blue67;
+}
+{\*\expandedcolortbl;;\cssrgb\c100000\c25279\c100000;\cssrgb\c100000\c14913\c0;\cssrgb\c0\c0\c0;
+\csgenericrgb\c67843\c66275\c12549;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c60000\c65882\c72941;\csgenericrgb\c74902\c39216\c14902;\csgenericrgb\c99608\c73333\c35686;
+\csgenericrgb\c34510\c46275\c27843;\csgenericrgb\c33725\c51765\c67843;\csgenericrgb\c42745\c42745\c42745;\csgenericrgb\c52157\c37647\c60392;\csgenericrgb\c31765\c53333\c26275;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh17700\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 \'d2\'bb.Redis\'bc\'f2\'bd\'e9\
+
+\fs36 1.Redis\'ca\'c7\'d2\'bb\'b8\'f6\'bb\'f9\'d3\'dakey-value\'d0\'ce\'ca\'bd\'bd\'f8\'d0\'d0\'b4\'e6\'b4\'a2\'b5\'c4\'c4\'da\'b4\'e6\'d0\'cd\'ca\'fd\'be\'dd\'bf\'e2\'a1\'a3\
+    1.1 \'ca\'fd\'be\'dd\'b4\'e6\'b4\'a2\'b7\'bd\'ca\'bd\'ce\'aakey-value\
+    1.2 \'ca\'fd\'be\'dd\'b4\'e6\'b4\'a2\'d4\'da\'c4\'da\'b4\'e6\'d6\'d0\
+        1.2.1 \cf2 \'d3\'c5\'b5\'e3\cf0 \'a3\'ba\'d0\'a7\'c2\'ca\'b8\'df\'a1\'a3\'c0\'ed\'c2\'db\'d6\'b5\'a3\'ba\'c3\'bf\'c3\'eb10K\'ca\'fd\'be\'dd\'b6\'c1\'c8\'a1\
+    1.3 \'b6\'a8\'ce\'bb\'a3\'ba\'ca\'fd\'be\'dd\'bf\'e2\'c8\'ed\'bc\'fe\
+        1.3.1 \'d7\'f7\'d3\'c3\'a3\'ba\'b4\'e6\'b4\'a2\'ca\'fd\'be\'dd\
+2.Redis\'ca\'c7\'d2\'bb\'b8\'f6NoSql\'ca\'fd\'be\'dd\'bf\'e2\
+    2.1 \'d7\'d6\'c3\'e6\'c0\'ed\'bd\'e2\'a3\'ba\'b2\'bb\'ca\'b9\'d3\'c3SQL\'c3\'fc\'c1\'ee\'b2\'d9\'d7\'f7\'ca\'fd\'be\'dd\'bf\'e2\'c8\'ed\'bc\'fe\
+    2.2 NoSQL : \'d3\'a2\'ce\'c4\'c8\'ab\'b3\'c6 Not Only SQL\'a3\'ac\'b1\'ed\'ca\'be\'d4\'da\'d3\'a6\'d3\'c3\'b3\'cc\'d0\'f2\'bf\'aa\'b7\'a2\'ca\'b1\'a3\'ac\'b2\'bb\'ca\'c7\'b1\'d8\'d0\'eb\'ca\'b9\'d3\'c3\'b9\'d8\'cf\'b5\'d0\'cd\'ca\'fd\'be\'dd\'bf\'e2\'a3\'ac\'bf\'c9\'d2\'d4\'ca\'b9\'d3\'c3NoSQL\'b4\'fa\'cc\'e6\'b9\'d8\'cf\'b5\'d0\'cd\'ca\'fd\'be\'dd\'bf\'e2\'b5\'c4\cf3 \'b2\'bf\'b7\'d6\cf0 \'b9\'a6\'c4\'dc\'a1\'a3\
+    2.3 \'c4\'bf\'c7\'b0NoSQL\'b2\'bb\'c4\'dc\'cd\'ea\'c8\'ab\'b4\'fa\'cc\'e6\'b9\'d8\'cf\'b5\'d0\'cd\'ca\'fd\'be\'dd\'bf\'e2\'a3\'ac\'ca\'b9\'d3\'c3\'b9\'d8\'cf\'b5\'d0\'cd\'ca\'fd\'be\'dd\'bf\'e2\'bd\'e1\'ba\'cfNoSQL\'ca\'fd\'be\'dd\'bf\'e2\'bd\'f8\'d0\'d0\'cd\'ea\'b3\'c9\'cf\'ee\'c4\'bf\
+         2.3.1 \'b5\'b1\'ca\'fd\'be\'dd\'b1\'c8\'bd\'cf\'b8\'b4\'d4\'d3\'ca\'b1\'b2\'bb\'ca\'ca\'d3\'c3NoSQL\'ca\'fd\'be\'dd\'bf\'e2\
+         2.3.2 \'b9\'d8\'cf\'b5\'d0\'cd\'ca\'fd\'be\'dd\'bf\'e2\'d2\'c0\'c8\'bb\'d7\'f6\'ce\'aa\'ca\'fd\'be\'dd\'b4\'e6\'b4\'a2\'b5\'c4\'d6\'f7\'d2\'aa\'c8\'ed\'bc\'fe\
+         2.3.3 NoSQL\'ca\'fd\'be\'dd\'bf\'e2\'b5\'b1\'d7\'f7\'bb\'ba\'b4\'e6\'b9\'a4\'be\'df\'c0\'b4\'ca\'b9\'d3\'c3\
+               2.3.3.1 \'b0\'d1\'c4\'b3\'d0\'a9\cf3 \'ca\'b9\'d3\'c3\'c6\'b5\'c2\'ca\'bd\'cf\'b8\'df\cf0 \'b5\'c4\'c4\'da\'c8\'dd\'b2\'bb\'bd\'f6\'bd\'f6\'b4\'e6\'b4\'a2\'b5\'bd\'b9\'d8\'cf\'b5\'d0\'cd\'ca\'fd\'be\'dd\'bf\'e2\'d6\'d0\'bb\'b9\'b4\'e6\'b4\'a2\'b5\'bdNoSQL\'ca\'fd\'be\'dd\'bf\'e2\'d6\'d0\'a1\'a3\
+               2.3.3.2 \cf3 \'bf\'bc\'c2\'c7\'b5\'bdNoSQL\'ca\'fd\'be\'dd\'bf\'e2\'ba\'cd\'b9\'d8\'cf\'b5\'d0\'cd\'ca\'fd\'be\'dd\'bf\'e2\'ca\'fd\'be\'dd\'cd\'ac\'b2\'bd\'b5\'bd\'ce\'ca\'cc\'e2\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 {{\NeXTGraphic 屏幕快照 2019-07-13 下午10.28.08.png \width12100 \height6020 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}�}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+
+\fs36 3
+\f0 .Redis\'b3\'d6\'be\'c3\'bb\'af\'b2\'df\'c2\'d4\
+    3.1 rdb\
+         3.1.1 \'c4\'ac\'c8\'cf\'b5\'c4\'b3\'d6\'be\'c3\'bb\'af\'b2\'df\'c2\'d4\
+         3.1.2 \'c3\'bf\'b8\'f4\'d2\'bb\'b6\'a8\'ca\'b1\'bc\'e4\'ba\'f3\'b0\'d1\'c4\'da\'b4\'e6\'d6\'d0\'ca\'fd\'be\'dd\'b3\'d6\'be\'c3\'bb\'af\'b5\'bddump.rdb\'ce\'c4\'bc\'fe\'d6\'d0\
+              \cf2 \'c8\'b1\'b5\'e3\'a3\'ba\cf0 \
+               1 \'ca\'fd\'be\'dd\'b9\'fd\'d3\'da\'bc\'af\'d6\'d0\
+               2 \'bf\'c9\'c4\'dc\'b5\'bc\'d6\'c2\'d7\'ee\'ba\'f3\'b5\'c4\'ca\'fd\'be\'dd\'c3\'bb\'d3\'d0\'b3\'d6\'be\'c3\'bb\'af\'b5\'bddump.rdb\'d6\'d0\
+                   \'bd\'e2\'be\'f6\'b0\'ec\'b7\'a8\'a3\'ba\'ca\'b9\'d3\'c3\'c3\'fc\'c1\'ee\'a3\'baSAVE\'bb\'f2BGSAVE\'ca\'d6\'b6\'af\'b3\'d6\'be\'c3\'bb\'af\'a1\'a3\
+    3.2 aof
+\f1               \
+           3.2.1 
+\f0 \'bc\'e0\'cc\'fd
+\f1 Redis
+\f0 \'b5\'c4\'c8\'d5\'d6\'be\'ce\'c4\'bc\'fe\'a3\'ac\'bc\'e0\'cc\'fd\'c8\'e7\'b9\'fb\'b7\'a2\'cf\'d6\'d6\'b4\'d0\'d0\'c1\'cb\'d0\'de\'b8\'c4\'a1\'a2\'c9\'be\'b3\'fd\'a1\'a2\'d0\'c2\'d4\'f6\'c3\'fc\'c1\'ee\'a3\'ac\'c1\'a2\'bc\'b4\'b8\'f9\'be\'dd\'d5\'e2\'cc\'f5\'c3\'fc\'c1\'ee\'b0\'d1\'ca\'fd\'be\'dd\'b3\'d6\'be\'c3\'bb\'af\
+               \cf2 \'c8\'b1\'b5\'e3\'a3\'ba\
+                \cf4 1 \'d0\'a7\'c2\'ca\'bd\'b5\'b5\'cd\
+\
+
+\fs48 \'b6\'fe.Redis\'b3\'a3\'d3\'c3\'c3\'fc\'c1\'ee\
+
+\fs36 1.\'c3\'fc\'c1\'ee\'ca\'d6\'b2\'e1\'cd\'f8\'d6\'b7\'a3\'bahttp://doc.redisfans.com\
+2.Redis\'ca\'fd\'be\'dd\'c0\'e0\'d0\'cd\
+   \cf2 2.1 String\cf4 \
+   2.2 Hash \
+   2.3 List\
+   2.4 Set\
+   2.5 SortedSet \'d3\'d0\'d0\'f2\'bc\'af\'ba\'cf\
+\
+
+\fs48 \'c8\'fd.Redis\'b3\'a3\'d3\'c3\'b8\'c5\'c4\'ee\
+
+\fs36 1.Redis\'c4\'ac\'c8\'cf\'d3\'d016384\'b8\'f6solts(\'b2\'db)\'a3\'ac\'c3\'bf\'b8\'f6\'b2\'db\'bf\'c9\'d2\'d4\'b4\'e6\'b4\'a2\'b6\'e0\'b8\'f6hash\'d6\'b5\'a1\'a3\
+2.Redis\'c4\'ac\'c8\'cf\'b2\'bb\'d0\'e8\'d2\'aa\'c3\'dc\'c2\'eb\'a1\'a3\
+     2.1 \'ca\'b9\'d3\'c3vim redis.conf\'bd\'f8\'c8\'eb\'b8\'c3\'ce\'c4\'bc\'fe\'a3\'ac\'d4\'da\'ce\'c4\'bc\'fe\'d6\'d0\'d0\'de\'b8\'c4\cf3 requirepass root\cf4 \'c9\'e8\'d6\'c3\'c3\'dc\'c2\'eb\
+3.\'c9\'e8\'d6\'c3\'c3\'dc\'c2\'eb\'ba\'f3\'cd\'a8\'b9\'fd\'a3\'basrc/redis-cli -h 192.168.2.128 -p 6379 -a smalling\
+     3.1 -h \'d6\'f7\'bb\'faip\
+     3.2 -p \'b6\'cb\'bf\'da\
+     3.3 -a \'c3\'dc\'c2\'eb\
+\
+
+\fs48 \'cb\'c4.Jedis\
+
+\fs36 1.Jedis\'ca\'c7Redis\'bf\'cd\'bb\'a7\'b6\'cb\'b9\'a4\'be\'dfjar\
+2.\'ca\'b9\'d3\'c3\'b7\'c7\'bc\'af\'c8\'ba\'b0\'e6\'ca\'be\'c0\'fd\'b4\'fa\'c2\'eb\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf5 \cb6 @RunWith\cf7 (SpringRunner.\cf8 class\cf7 )\
+\cf5 @SpringBootTest\
+\cf8 public class \cf7 JedisTest \{\
+\
+    \cf5 @Test\
+    \cf8 public void \cf9 test\cf7 ()\{\
+        Jedis jedis = \cf8 new \cf7 Jedis(\cf10 "192.168.2.128"\cf8 ,\cf11 6379\cf7 )\cf8 ;\
+        \cf12 //
+\f0 \'d0\'c2\'d4\'f6
+\f2 \
+    
+\f1 //jedis.set("name","
+\f0 \'b1\'b1\'be\'a9
+\f1 ");\
+        //
+\f0 \'b2\'e9\'d1\'af
+\f2 \
+    
+\f1 //System.out.println(jedis.get("name"));\
+        //
+\f0 \'d0\'de\'b8\'c4
+\f2 \
+    
+\f1 //jedis.set("name","Hello World");\
+        //System.out.println(jedis.get("name"));\
+        //
+\f0 \'c9\'be\'b3\'fd
+\f2 \
+    
+\f1 \cf7 Long index = jedis.del(\cf10 "name"\cf7 )\cf8 ;\
+        \cf7 System.
+\f3\i \cf13 out
+\f1\i0 \cf7 .println(index)\cf8 ;\
+    \cf7 \}\
+\}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0 \cf4 \cb1 \
+
+\fs48 \'ce\'e5.Junit 4\
+
+\fs36 1.\'b5\'a5\'d4\'aa\'b2\'e2\'ca\'d4\'b2\'e5\'bc\'fe\
+2.\'ca\'b9\'d3\'c3Junit\'d6\'f7\'d2\'aa\'c4\'bf\'b5\'c4\
+    2.1 \'bf\'c9\'d2\'d4\'b2\'bb\'d3\'c3\'b1\'e0\'d0\'b4main\'b7\'bd\'b7\'a8\
+3.\'d2\'aa\'c7\'f3\
+   3.1 \'b7\'bd\'ca\'bd\'b1\'d8\'d0\'eb\'ca\'c7public void \'c7\'d2\'c3\'bb\'d3\'d0\'b2\'ce\'ca\'fd\
+   3.2 \'b5\'b1\'c7\'b0\'cf\'ee\'c4\'bf\'b2\'bb\'d2\'aa\'d3\'d0Test\'c0\'e0\'b7\'f1\'d4\'f2@Test\'d2\'fd\'d3\'c3\'d7\'d4\'bc\'baTest\'c0\'e0\
+4.\'ca\'b5\'cf\'d6\'b2\'bd\'d6\'e8\'a3\'ba\'a3\'a8Maven\'a3\'a9\
+   4.1 \'d4\'dapom.xml\'d6\'d0\'d2\'c0\'c0\'b5junit4\
+   4.2 \'d4\'da\'d0\'e8\'d2\'aa\'b2\'e2\'ca\'d4\'b5\'c4\'b7\'bd\'b7\'a8\'c9\'cf\'cc\'ed\'bc\'d3\'d2\'bb\'b8\'f6@Test\
+   4.3 @Before:\'d4\'da@Test\'b7\'bd\'b7\'a8\'d6\'ae\'c7\'b0\'d6\'b4\'d0\'d0\
+   4.4 @After:\'d4\'da@Test\'b7\'bd\'b7\'a8\'d6\'ae\'ba\'f3\'d6\'b4\'d0\'d0\
+   4.5 \'c8\'e7\'b9\'fb\'d3\'d0\'b6\'e0\'b8\'f6@Test\'c3\'bf\'b8\'f6@Test\'c7\'b0\'ba\'f3\'b6\'bc\'bb\'e1\'d6\'b4\'d0\'d0@Before\'ba\'cd@After\
+\
+
+\fs48 \'c1\'f9.Redis\'bc\'af\'c8\'ba\
+
+\fs36 1.\'bc\'af\'c8\'ba\'b5\'c4\'b8\'c5\'c4\'ee\
+    1.1 \'b6\'e0\'b8\'f6\'d2\'b5\'ce\'f1\'b5\'a5\'d4\'aa\'d0\'ad\'cd\'ac\'b9\'a4\'d7\'f7\'d7\'e9\'b3\'c9\'b5\'c4\'d5\'fb\'cc\'e5\'b3\'c6\'ce\'aa\'bc\'af\'c8\'ba\
+         1.1.1 \'c3\'bf\'b8\'f6\'d2\'b5\'ce\'f1\'b5\'a5\'d4\'aa\'b6\'bc\'ca\'c7\'cf\'e0\'cd\'ac\'b5\'c4\'a1\'a3\
+2.\'b5\'b1\'bc\'af\'c8\'ba\'d6\'d0\'d2\'b5\'ce\'f1\'b5\'a5\'d4\'aa\'b3\'ac\'b9\'fd1/2\'b8\'f6down\'b5\'f4\'ca\'b1\'d5\'fb\'b8\'f6\'bc\'af\'c8\'ba\'b2\'bb\'bf\'c9\'d3\'c3\'a1\'a3\
+    2.1 \'bd\'a8\'d2\'e9\'ca\'b9\'d3\'c3\'c6\'e6\'ca\'fd\'b8\'f6\'a3\'ac\'d5\'fb\'cc\'e5down\'bb\'fa\'c2\'ca\'d0\'a1\
+3.\cf3 \'d2\'bb\'d6\'f7\'d2\'bb\'b1\'b8\cf4 \'c4\'a3\'ca\'bd\
+    3.1 \'b8\'f8\'c3\'bf\'b8\'f6\'d2\'b5\'ce\'f1\'b5\'a5\'d4\'aa\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'d2\'b5\'ce\'f1\'b5\'a5\'d4\'aa\'a3\'ac\'d4\'ad\'c0\'b4\'b5\'c4\'d2\'b5\'ce\'f1\'b5\'a5\'d4\'aa(master)\'ba\'f3\'b2\'fa\'c9\'fa\'b5\'c4\'bd\'d0\'d7\'f6(slave)\
+4.\'bc\'af\'c8\'ba\'ba\'cd\'ce\'b1\'bc\'af\'c8\'ba\
+    4.1 \'bc\'af\'c8\'ba\'a3\'ba\'c3\'bf\'d2\'bb\'b8\'f6\'d2\'b5\'ce\'f1\'b5\'a5\'d4\'aa\'b6\'bc\'b0\'b2\'d7\'b0\'b5\'bd\'b5\'a5\'b6\'c0\'b5\'c4\'b7\'fe\'ce\'f1\'c6\'f7\'c9\'cf\
+    4.2 \'ce\'b1\'bc\'af\'c8\'ba\'a3\'ba\'cb\'f9\'d3\'d0\'d2\'b5\'ce\'f1\'b5\'a5\'d4\'aa\'b6\'bc\'b0\'b2\'d7\'b0\'b5\'bd\'cd\'ac\'d2\'bb\'b8\'f6\'b7\'fe\'ce\'f1\'c6\'f7\'c9\'cf\'a3\'ac\'cd\'a8\'b9\'fd\'b6\'cb\'bf\'da\'c7\'f8\'b7\'d6\'b2\'bb\'cd\'ac\'b5\'c4\'d2\'b5\'ce\'f1\'b5\'a5\'d4\'aa\'a1\'a3\
+\
+
+\fs48 \'c6\'df.\'ca\'b9\'d3\'c3Jedis\'b7\'c3\'ce\'caRedis\'bc\'af\'c8\'ba
+\fs36 \
+1.\'b4\'fa\'c2\'eb\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf5 \cb6 @Test\
+\cf8 public void \cf9 test1\cf7 ()\{\
+    Set<HostAndPort> set = \cf8 new \cf7 HashSet<>()\cf8 ;\
+    \cf7 set.add(\cf8 new \cf7 HostAndPort(\cf10 "192.168.2.128"\cf8 ,\cf11 7001\cf7 ))\cf8 ;\
+    \cf7 set.add(\cf8 new \cf7 HostAndPort(\cf10 "192.168.2.128"\cf8 ,\cf11 7002\cf7 ))\cf8 ;\
+    \cf7 set.add(\cf8 new \cf7 HostAndPort(\cf10 "192.168.2.128"\cf8 ,\cf11 7003\cf7 ))\cf8 ;\
+    \cf7 set.add(\cf8 new \cf7 HostAndPort(\cf10 "192.168.2.128"\cf8 ,\cf11 7004\cf7 ))\cf8 ;\
+    \cf7 set.add(\cf8 new \cf7 HostAndPort(\cf10 "192.168.2.128"\cf8 ,\cf11 7005\cf7 ))\cf8 ;\
+    \cf7 set.add(\cf8 new \cf7 HostAndPort(\cf10 "192.168.2.128"\cf8 ,\cf11 7006\cf7 ))\cf8 ;\
+    \cf7 JedisCluster jedisCluster = \cf8 new \cf7 JedisCluster(set)\cf8 ;\
+    \cf7 String result = jedisCluster.get(\cf10 "name"\cf7 )\cf8 ;\
+    \cf7 System.
+\f3\i \cf13 out
+\f1\i0 \cf7 .println(result)\cf8 ;\
+\cf7 \}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0 \cf4 \cb1 2.redis\'bc\'af\'c8\'ba\'d4\'daSpringBoot\'d6\'d0\
+\'c5\'e4\'d6\'c3\'c0\'e0\'a3\'ba\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf5 \cb6 @Configuration\
+\cf8 public class \cf7 RedisConfig \{\
+\
+    
+\f3\i \cf14 /**\
+     * Jedis
+\f0\i0 \'c1\'ac\'bd\'d3\'b3\'d8
+\f4\i \
+     
+\f3 */\
+    
+\f1\i0 \cf5 @Bean\
+    \cf8 public \cf7 JedisPoolConfig \cf9 jedisPoolConfig\cf7 ()\{\
+        JedisPoolConfig config = \cf8 new \cf7 JedisPoolConfig()\cf8 ;\
+        \cf12 //
+\f0 \'d7\'ee\'b4\'f3\'c1\'ac\'bd\'d3\'ca\'fd
+\f2 \
+    
+\f1 \cf7 config.setMaxTotal(\cf11 30\cf7 )\cf8 ;\
+        \cf12 //
+\f0 \'d7\'ee\'b4\'f3\'bf\'d5\'cf\'d0\'c1\'ac\'bd\'d3\'ca\'fd
+\f2 \
+    
+\f1 \cf7 config.setMaxIdle(\cf11 10\cf7 )\cf8 ;\
+        \cf12 //
+\f0 \'c3\'bf\'b4\'ce\'ca\'cd\'b7\'c5\'c1\'ac\'bd\'d3\'b5\'c4\'d7\'ee\'b4\'f3\'ca\'fd\'c4\'bf
+\f2 \
+    
+\f1 \cf7 config.setNumTestsPerEvictionRun(\cf11 1024\cf7 )\cf8 ;\
+        \cf12 //
+\f0 \'b7\'c5\'c1\'ac\'bd\'d3\'b5\'c4\'c9\'a8\'c3\'e8\'bc\'e4\'b8\'f4\'a3\'a8\'ba\'c1\'c3\'eb
+\f1 )\
+        \cf7 config.setTimeBetweenEvictionRunsMillis(\cf11 30000\cf7 )\cf8 ;\
+        \cf12 //
+\f0 \'c1\'ac\'bd\'d3\'d7\'ee\'d0\'a1\'bf\'d5\'cf\'d0\'ca\'b1\'bc\'e4
+\f2 \
+    
+\f1 \cf7 config.setMinEvictableIdleTimeMillis(\cf11 1800000\cf7 )\cf8 ;\
+        \cf12 //
+\f0 \'c1\'ac\'bd\'d3\'bf\'d5\'cf\'d0\'b6\'e0\'be\'c3\'ba\'f3\'ca\'cd\'b7\'c5
+\f1 , 
+\f0 \'b5\'b1\'bf\'d5\'cf\'d0\'ca\'b1\'bc\'e4
+\f1 >
+\f0 \'b8\'c3\'d6\'b5
+\f2  
+\f0 \'c7\'d2
+\f2  
+\f0 \'bf\'d5\'cf\'d0\'c1\'ac\'bd\'d3
+\f1 >
+\f0 \'d7\'ee\'b4\'f3\'bf\'d5\'cf\'d0\'c1\'ac\'bd\'d3\'ca\'fd
+\f2  
+\f0 \'ca\'b1\'d6\'b1\'bd\'d3\'ca\'cd\'b7\'c5
+\f2 \
+    
+\f1 \cf7 config.setSoftMinEvictableIdleTimeMillis(\cf11 10000\cf7 )\cf8 ;\
+        \cf12 //
+\f0 \'bb\'f1\'c8\'a1\'c1\'ac\'bd\'d3\'ca\'b1\'b5\'c4\'d7\'ee\'b4\'f3\'b5\'c8\'b4\'fd\'ba\'c1\'c3\'eb\'ca\'fd
+\f1 ,
+\f0 \'d0\'a1\'d3\'da\'c1\'e3
+\f1 :
+\f0 \'d7\'e8\'c8\'fb\'b2\'bb\'c8\'b7\'b6\'a8\'b5\'c4\'ca\'b1\'bc\'e4
+\f1 ,
+\f0 \'c4\'ac\'c8\'cf
+\f1 -1\
+        \cf7 config.setMaxWaitMillis(\cf11 1500\cf7 )\cf8 ;\
+        \cf12 //
+\f0 \'d4\'da\'bb\'f1\'c8\'a1\'c1\'ac\'bd\'d3\'b5\'c4\'ca\'b1\'ba\'f2\'bc\'ec\'b2\'e9\'d3\'d0\'d0\'a7\'d0\'d4
+\f1 , 
+\f0 \'c4\'ac\'c8\'cf
+\f1 false\
+        \cf7 config.setTestOnBorrow(\cf8 true\cf7 )\cf8 ;\
+        \cf12 //
+\f0 \'d4\'da\'bf\'d5\'cf\'d0\'ca\'b1\'bc\'ec\'b2\'e9\'d3\'d0\'d0\'a7\'d0\'d4
+\f1 , 
+\f0 \'c4\'ac\'c8\'cf
+\f1 false\
+        \cf7 config.setTestWhileIdle(\cf8 true\cf7 )\cf8 ;\
+        \cf12 //
+\f0 \'c1\'ac\'bd\'d3\'ba\'c4\'be\'a1\'ca\'b1\'ca\'c7\'b7\'f1\'d7\'e8\'c8\'fb
+\f1 , false
+\f0 \'b1\'a8\'d2\'ec\'b3\'a3
+\f1 ,ture
+\f0 \'d7\'e8\'c8\'fb\'d6\'b1\'b5\'bd\'b3\'ac\'ca\'b1
+\f1 , 
+\f0 \'c4\'ac\'c8\'cf
+\f1 true\
+        \cf7 config.setBlockWhenExhausted(\cf8 false\cf7 )\cf8 ;\
+        return \cf7 config\cf8 ;\
+    \cf7 \}\
+\
+    
+\f3\i \cf14 /**\
+     * jedisCluster\
+     */\
+    
+\f1\i0 \cf5 @Bean\
+    \cf8 public \cf7 JedisCluster \cf9 jedisCluster\cf7 (JedisPoolConfig jedisPoolConfig)\{\
+        Set<HostAndPort> set = \cf8 new \cf7 HashSet<>()\cf8 ;\
+        \cf7 set.add(\cf8 new \cf7 HostAndPort(\cf10 "192.168.2.128"\cf8 ,\cf11 7001\cf7 ))\cf8 ;\
+        \cf7 set.add(\cf8 new \cf7 HostAndPort(\cf10 "192.168.2.128"\cf8 ,\cf11 7002\cf7 ))\cf8 ;\
+        \cf7 set.add(\cf8 new \cf7 HostAndPort(\cf10 "192.168.2.128"\cf8 ,\cf11 7003\cf7 ))\cf8 ;\
+        \cf7 set.add(\cf8 new \cf7 HostAndPort(\cf10 "192.168.2.128"\cf8 ,\cf11 7004\cf7 ))\cf8 ;\
+        \cf7 set.add(\cf8 new \cf7 HostAndPort(\cf10 "192.168.2.128"\cf8 ,\cf11 7005\cf7 ))\cf8 ;\
+        \cf7 set.add(\cf8 new \cf7 HostAndPort(\cf10 "192.168.2.128"\cf8 ,\cf11 7006\cf7 ))\cf8 ;\
+        \cf7 JedisCluster jedisCluster = \cf8 new \cf7 JedisCluster(set\cf8 ,\cf7 jedisPoolConfig)\cf8 ;\
+        return \cf7 jedisCluster\cf8 ;\
+    \cf7 \}\
+\}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0 \cf4 \cb1 \'b2\'e2\'ca\'d4\'b4\'fa\'c2\'eb\'a3\'ba\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf5 \cb6 @RunWith\cf7 (SpringRunner.\cf8 class\cf7 )\
+\cf5 @SpringBootTest\
+\cf8 public class \cf7 JedisTest \{\
+    \cf5 @Autowired\
+    \cf8 private \cf7 JedisCluster \cf13 jedisCluster\cf8 ;\
+\
+    \cf5 @Test\
+    \cf8 public void \cf9 test\cf7 ()\{\
+        String result = \cf13 jedisCluster\cf7 .get(\cf10 "name"\cf7 )\cf8 ;\
+        \cf7 System.
+\f3\i \cf13 out
+\f1\i0 \cf7 .println(result)\cf8 ;\
+    \cf7 \}\
+\}\
+\
+}
